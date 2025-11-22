@@ -1,0 +1,135 @@
+PDF Extraction Output
+Source File: CRS.pdf
+Total Pages: 2
+============================================================
+
+
+--- Page 1 ---
+
+[Page Text]
+ 
+EPC FOR UPGRADATION OF FACILITIES AT SE FIELD 
+ 
+COMMENTS RESOLUTION SHEET (CRS) 
+Contract No. 
+4700022908 
+Project No. 
+P30377 
+Comment Code -2 
+Document No. 
+Transmittal No. 
+Document Title 
+ 
+1 
+Approved – No Comments 
+ 
+2 
+Approved Subject to Incorporation of Comments 
+P29171-29-01-08-
+1601 
+C 
+ATC-4700022908-
+00770 
+PIPING AND INSTRUMENT DIAGRAM 
+DISPOSAL WATER: P-2415, 2416 & 2417 
+CDS: SHAH (CONSTRUCTION) 
+ 
+3 
+Revise and Resubmit 
+ 
+4 
+Rejected 
+ 
+5 
+Retained for Information 
+ 
+ 
+ 
+ 
+RSME-P161-PRO-1601-F-010 REV 3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 1 of 1 
+ 
+S. 
+No. 
+Reference / Page 
+No. 
+COMPANY Comments 
+   CONTRACTOR Response 
+Status / 
+Remarks 
+ 
+ 
+ 
+PROCESS DISCIPLINE 
+ 
+ 
+1.  
+P29171-29-01-08-
+1601 
+Add the note on the P&ID for reference. 
+Note-12 has been incorporated as per 
+existing site conditions. 
+ 
+2.  
+P29171-29-01-08-
+1601 
+Blind flange size to be confirmed. 
+Blind Size has been confirmed for all the 
+flanges in Note-13 and Note-14 
+respectively.  
+ 
+ 
+ 
+DESIGN REVIEW 
+ 
+ 
+3.  
+P29171-29-01-08-
+1601 
+Spec Breaks at flanges to indicate the blind flange material 
+considering clarity for future use. 
+Note 15 and Note 16 are incorporated 
+accordingly to confirm the Blind Flange 
+material. 
+ 
+ 
+ORIGINATOR 
+REVIEWED BY 
+APPROVED BY 
+Name 
+Shehzad Ajmal 
+Muhammad Uzair Yaseen 
+Anantha Kumar Rajamani 
+Sign 
+ 
+ 
+ 
+Date 
+4-Oct-2024 
+4-Oct-2024 
+4-Oct-2024 
+
+
+[Annotations]
+No annotations found.
+
+--- Page 2 ---
+
+[Page Text]
+©
+All BF sizes to be confirmed
+
+
+[Annotations]
+Annotation 1: (2) All BF sizes to be confirmed
+Annotation 2: (3) 
