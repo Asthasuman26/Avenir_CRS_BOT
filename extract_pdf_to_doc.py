@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz 
 import sys
 import os
 from docx import Document
