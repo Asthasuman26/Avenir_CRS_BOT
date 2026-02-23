@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.java": "java",
+        "plyconfig.json": "jsonc"
+    },
+    "python.pythonPath": "C:\\Users\\astha\\AppData\\Local\\Programs\\Python\\Python314\\python.exe"
+}

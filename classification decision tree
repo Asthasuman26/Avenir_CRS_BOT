@@ -1,0 +1,9 @@
+Does page contain PDF annotations?
+ ├─ YES -> Extract as STICKY_NOTE
+ └─ NO
+     |
+Is text selectable?
+ ├─ YES -> Extract as PRINTED_COMMENT
+ └─ NO
+     |
+Run OCR -> Extract as OCR_COMMENT

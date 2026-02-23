@@ -1,0 +1,30 @@
+project_root/
+│
+├── backend/
+│   ├── final_bot_main.py
+│   │
+│   ├── pdf_processing/
+│   │   ├── final_bot_pdf_classifier.py
+│   │   ├── final_bot_annotation_extractor.py
+│   │   ├── final_bot_structured_crs_extractor.py   
+│   │   ├── final_bot_text_comment_extractor.py
+│   │
+│   ├── crs/
+│   │   ├── final_bot_crs_mapper.py
+│   │   ├── final_bot_crs_schema.py
+│   │   ├── final_bot_crs_word_generator.py
+│   │
+│   ├── utils/                                    
+│   │   ├── cleaner.py                            
+│   │   ├── deduplicator.py                       
+│   │
+│   └── storage/
+│       ├── uploads/
+│       └── outputs/
+│
+├── templates/
+│   └── FINAL_BOT_CRS_TEMPLATE.docx
+│
+├── final_bot_app.py
+└── requirements.txt
+
