@@ -1,61 +1,37 @@
 import fitz
-import re
 
 
-def is_real_comment(text: str) -> bool:
-    text = text.strip()
-
-    if not text:
-        return False
-
-    normalized = " ".join(text.split())
-
-    # Minimum length
-    if len(normalized) < 18:
-        return False
-
-    # At least 3 words
-    words = normalized.split()
-    if len(words) < 3:
-        return False
-
-    # Reject pure numeric blocks
-    if re.fullmatch(r"[0-9\.\-\s×x,/]+", normalized):
-        return False
-
-    # Reject numeric-dominated blocks (dimensions, coordinates)
-    digit_ratio = sum(c.isdigit() for c in normalized) / len(normalized)
-    if digit_ratio > 0.4:
-        return False
-
-    # Reject short ALL CAPS identifiers
-    if normalized.isupper() and len(normalized) < 45:
-        return False
-
-    # Reject short label-style blocks
-    if len(words) <= 4 and all(w.isalnum() for w in words):
-        return False
-
-    return True
+def clean_annotation_text(text: str) -> str:
+    """
+    Normalize PDF annotation text while keeping only the actual reviewer note.
+    """
+    return " ".join((text or "").replace("\x00", "").split())
 
 
 def extract_drawing_comments(pdf_path: str):
+    """
+    Extract only reviewer comments that are written on top of the PDF as
+    annotations.
+
+    Earlier this extractor read every text block from the PDF page. That also
+    picked up drawing headings, title blocks, labels, and other native PDF text.
+    Using the annotation layer keeps the CRS output limited to comments added
+    over the PDF, such as sticky notes and free-text comments.
+    """
     doc = fitz.open(pdf_path)
     results = []
 
     for page_no, page in enumerate(doc, start=1):
-        blocks = page.get_text("blocks")
+        for annot in page.annots() or []:
+            comment = clean_annotation_text(annot.info.get("content", ""))
 
-        for block in blocks:
-            text = block[4]
+            if not comment:
+                continue
 
-            if is_real_comment(text):
-                clean = " ".join(text.split())
-
-                results.append({
-                    "reference": f"Page {page_no}",
-                    "comment": clean
-                })
+            results.append({
+                "reference": f"Page {page_no}",
+                "comment": comment
+            })
 
     doc.close()
     return results
